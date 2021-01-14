@@ -50,29 +50,34 @@ table {
 /* END OF MEYER RESET */
 
 
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 body {
-    background-color: white;
+	width:900px;
+	background-color: white;
+	
 }
 
 header {
     width: 100%;
-    height: 200px;
-    /*border: 5px red solid;*/
+    height: 250px;
     margin-top: 50px;
     margin-left: 75px;
-    margin-right: 75px;
+	margin-right: 75px;
 }
 
 header h1 {
     font-family: 'Chelsea Market';
-    font-size:48px;
+	font-size:48px;
 }
 
 header p {
-    font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto Mono', monospace;
 }
 
 header img {
@@ -80,11 +85,11 @@ header img {
     margin: 0;
     padding: 0;
     width:25%;
-    box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 .header-image {
-    display: inline-block;
+	display: block;
 }
 
 .header-text {
@@ -92,16 +97,22 @@ header img {
     text-align:center;
     display: block;
     margin-top:-200px;
-    margin-left: 300px;
+	margin-left: 200px;
+}
+
+.header-text p {
+	padding-top: 20px;
+	font-weight: bold;
 }
 
 nav {
     font-family: 'Roboto Mono', monospace;
-    text-align: center;
+	text-align: center;
 }
 
 nav a {
-    width: 125px;
+	width: 125px;
+	transition:.5s;
 }
 
 
@@ -109,12 +120,18 @@ nav #plan {
     text-decoration:none;
     background-color: #FF764E;
     color: white;
-    border-radius:10px;
+	border-radius:10px;
+	border: 2px solid #FF764E;
     margin: 10px;
     padding:10px;
     display:inline-block;
 }
 
+nav #plan:hover {
+	background: white;
+	color: #FF764E;
+	border: 2px solid #FF764E;
+}
 nav #learn {
     text-decoration:none;
     background-color: #5ED3EB;
@@ -123,6 +140,12 @@ nav #learn {
     margin: 10px;
     padding:10px;
     display:inline-block;
+}
+
+nav #learn:hover {
+	background: white;
+	color: #5ED3EB;
+	border: 2px solid #5ED3EB;
 }
 
 nav #involved {
@@ -135,6 +158,11 @@ nav #involved {
     display:inline-block;
 }
 
+nav #involved:hover {
+	background: white;
+	color: #FFCD69;
+	border: 2px solid #FFCD69;
+}
 
 
 
@@ -144,41 +172,54 @@ nav #involved {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     margin: 30px;
-    padding: 30px;
+	padding: 30px;
+}
+
+#main-text:hover {
+	background-color: #FF764E;
 }
 
 section {
-    text-align: center;
+	text-align: center;
 }
 
 #tips {
     margin: 0;
-    border: 5px solid black;
     font-family: 'Roboto Mono', monospace;
-    text-align: center;
+	text-align: center;
+	display:block;
 }
 
 #tips p{
     margin-left, margin-right: 25%;
     width: 300px;
     padding: 50px;
-    /*border: 5px solid black;*/
     font-family: 'Roboto Mono', monospace;
-    text-align: center;
+	text-align: center;
 }
 
 #tips p span {
-    font-weight: bold;
+	font-weight: bold;
+}
+
+.individual-tip-container{
+	text-align:center;
 }
 
 #fire {
-    width: 100px;
+	width: 100px;
 }
 
 #lodging {
-    width: 100px;
+	width: 100px;
 }
 
 footer {
-    background-color:#F9E7DC;
+	background-color:#F9E7DC;
+}
+
+#footer-image {
+	width: 900px;
+	height: 300px;
+
 }
