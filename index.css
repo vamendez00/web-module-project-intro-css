@@ -1,6 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF MEYER RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 *{
     border: 1px solid black;
     margin: 0;
     padding: 0;
 }
 
+body {
+	width:900px;
+	background-color: white;	
+}
+
+header {
+    display:block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 75px;
+	margin-right: 75px;
+}
+
+.headerImage img {
+    border-radius:50%;
+    margin: 0;
+    padding: 0;
+    width:25%;
+	box-sizing:border-box;
+}
+
+.headerText {
+    width: 75%;
+    text-align:center;
+    display: block;
+    margin-top:-200px;
+	margin-left: 200px;
+}
+
+.headerText h1 {
+    font-family: 'Chelsea Market';
+	font-size:48px;
+}
+
+.headerText p {
+	padding-top: 20px;
+	font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+    font-family: 'Roboto Mono', monospace;
+	text-align: center;
+    margin-bottom: 50px;
+}
+
+nav a {
+	width: 125px;
+	transition:.5s;
+}
+
+/*maybe try nth child? */
+
+nav .visit {
+    text-decoration:none;
+    background-color: #FF764E;
+    color: white;
+	border-radius:10px;
+	border: 2px solid #FF764E;
+    margin: 10px;
+    padding:10px;
+    display:inline-block;
+}
+
+nav .visit:hover {
+	background: white;
+	color: #FF764E;
+	border: 2px solid #FF764E;
+}
+nav .learn {
+    text-decoration:none;
+    background-color: #5ED3EB;
+    color: white;
+    border-radius:10px;
+    margin: 10px;
+    padding:10px;
+    display: inline-block;
+}
+
+nav .learn:hover {
+	background: white;
+	color: #5ED3EB;
+	border: 2px solid #5ED3EB;
+}
+
+nav .involvement {
+    text-decoration:none;
+    background-color: #FFCD69;
+    color: white;
+    border-radius:10px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav .involvement:hover {
+	background: white;
+	color: #FFCD69;
+	border: 2px solid #FFCD69;
+}
+
+
+
+.mainText {
+    background-color: #DDB9A3;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin: 30px;
+	padding: 30px;
+}
+
+.mainText:hover {
+	background-color: #FF764E;
+}
+
+
+.visitingTips {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	display:block;
+}
+
+.visitingTips p {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 300px;
+    padding: 50px;
+    font-family: 'Roboto Mono', monospace;
+	text-align: center;
+}
+
+.visitingTips p span {
+	font-weight: bold;
+}
+
+.tipContainer{
+	text-align:center;
+}
+
+.tipContainer img{
+    width: 100px;
+	text-align:center;
+}
+
+footer {
+	background-color:#F9E7DC;
+}
+
+.footerImage {
+	width: 900px;
+	height: 300px;
+
+}
