@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF MEYER RESET */
+
+
+
+/* *{
+    border: 1px solid black;
+} */
+
+body {
+    width:100%;
+	background-color: white;	
+}
+
+.pageContainer {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3%;
+    }
+
+.headerContainer {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+}
+.headerImage {
+    border-radius:50%;
+    margin-right: 20px;
+    padding: 0;
+    width:30%;
+    display:inline-block;
+}
+
+.headerText {
+    display:inline-block;    vertical-align:top;
+    text-align:center;
+    width: 60%;
+    margin: auto;padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.headerText h1 {
+    font-family: 'Chelsea Market';
+	font-size:2.7rem;
+}
+
+.headerText p {
+	padding-top: 20px;
+	font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem
+}
+
+nav {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+	text-align:center;
+    margin:auto;
+}
+
+nav a {
+    display:inline-block;
+	width: 20%;
+	transition:.5s;
+    border-radius:10px;
+    text-decoration:none;
+    margin: 4%;
+    padding: 1%;
+}
+
+/*maybe try nth child? */
+
+nav .visit {
+    background-color: #FF764E;
+    color: white;
+}
+
+nav .visit:hover {
+	background: white;
+	color: #FF764E;
+	border: 2px solid #FF764E;
+}
+
+nav .learn {
+    background-color: #5ED3EB;
+    color: white;
+}
+
+nav .learn:hover {
+	background: white;
+	color: #5ED3EB;
+	border: 2px solid #5ED3EB;
+}
+
+nav .involvement {
+    background-color: #FFCD69;
+    color: white;
+
+}
+
+nav .involvement:hover {
+	background: white;
+	color: #FFCD69;
+	border: 2px solid #FFCD69;
+}
+
+
+
+.mainText {
+    background-color: #DDB9A3;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+
+}
+
+.mainText p{
+    margin: auto;
+    padding:2%;
+}
+
+.mainText:hover {
+	background-color: #FF764E;
+}
+
+.tipContainer{
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+    margin-top:3%;
+	text-align:center;
+}
+
+.tipContainer img{
+    width: 10%;
+	text-align:center;
+}
+
+.visitingTips {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	display:block;
+}
+
+.visitingTips p {
+    margin:auto;
+    width: 300px;
+    padding: 50px;
+    font-family: 'Roboto Mono', monospace;
+	text-align: center;
+}
+
+.visitingTips p span {
+	font-weight: bold;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+	background-color:#F9E7DC;
+}
+
+.footerImage {
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+}
