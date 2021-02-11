@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,54 +51,61 @@ table {
 
 /* END OF MEYER RESET */
 
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-*{
+
+/* *{
     border: 1px solid black;
-    margin: 0;
-    padding: 0;
-}
+} */
 
 body {
-	width:900px;
+    width:100%;
 	background-color: white;	
 }
 
-header {
-    display:block;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: 75px;
-	margin-right: 75px;
+.pageContainer {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
 }
 
-.headerImage img {
+header {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3%;
+    }
+
+.headerContainer {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+}
+.headerImage {
     border-radius:50%;
-    margin: 0;
+    margin-right: 20px;
     padding: 0;
-    width:25%;
-	box-sizing:border-box;
+    width:30%;
+    display:inline-block;
 }
 
 .headerText {
-    width: 75%;
+    display:inline-block;    vertical-align:top;
     text-align:center;
-    display: block;
-    margin-top:-200px;
-	margin-left: 200px;
+    width: 60%;
+    margin: auto;padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 .headerText h1 {
     font-family: 'Chelsea Market';
-	font-size:48px;
+	font-size:2.7rem;
 }
 
 .headerText p {
 	padding-top: 20px;
 	font-weight: bold;
     font-family: 'Roboto Mono', monospace;
+    font-size: 1rem
 }
 
 nav {
@@ -167,14 +176,32 @@ nav .involvement:hover {
     color: white;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    margin: 30px;
-	padding: 30px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+
+}
+
+.mainText p{
+    margin: auto;
+    padding:2%;
 }
 
 .mainText:hover {
 	background-color: #FF764E;
 }
 
+.tipContainer{
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+	text-align:center;
+}
+
+.tipContainer img{
+    width: 10%;
+	text-align:center;
+}
 
 .visitingTips {
     margin: 0;
@@ -184,8 +211,7 @@ nav .involvement:hover {
 }
 
 .visitingTips p {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin:auto;
     width: 300px;
     padding: 50px;
     font-family: 'Roboto Mono', monospace;
@@ -196,21 +222,15 @@ nav .involvement:hover {
 	font-weight: bold;
 }
 
-.tipContainer{
-	text-align:center;
-}
-
-.tipContainer img{
-    width: 100px;
-	text-align:center;
-}
-
 footer {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
 	background-color:#F9E7DC;
 }
 
 .footerImage {
-	width: 900px;
-	height: 300px;
-
+    width: 100%;
+    height: 30vh;
+    margin: auto;
 }
