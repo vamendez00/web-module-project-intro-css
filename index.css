@@ -109,27 +109,27 @@ header {
 }
 
 nav {
+    box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-	text-align: center;
-    margin-bottom: 50px;
+	text-align:center;
+    margin:auto;
 }
 
 nav a {
-	width: 125px;
+    display:inline-block;
+	width: 20%;
 	transition:.5s;
+    border-radius:10px;
+    text-decoration:none;
+    margin: 4%;
+    padding: 1%;
 }
 
 /*maybe try nth child? */
 
 nav .visit {
-    text-decoration:none;
     background-color: #FF764E;
     color: white;
-	border-radius:10px;
-	border: 2px solid #FF764E;
-    margin: 10px;
-    padding:10px;
-    display:inline-block;
 }
 
 nav .visit:hover {
@@ -137,14 +137,10 @@ nav .visit:hover {
 	color: #FF764E;
 	border: 2px solid #FF764E;
 }
+
 nav .learn {
-    text-decoration:none;
     background-color: #5ED3EB;
     color: white;
-    border-radius:10px;
-    margin: 10px;
-    padding:10px;
-    display: inline-block;
 }
 
 nav .learn:hover {
@@ -154,13 +150,9 @@ nav .learn:hover {
 }
 
 nav .involvement {
-    text-decoration:none;
     background-color: #FFCD69;
     color: white;
-    border-radius:10px;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
+
 }
 
 nav .involvement:hover {
